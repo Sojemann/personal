@@ -1,0 +1,126 @@
+{% extends 'portfolio/base.html' %}
+{% load static%}
+
+{% block content%}
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1>I'm <span class="typed" data-typed-items="Babatunde Olasoji,  A Developer, A Project Manager, A Data Scientist, A BI Developer, A Photographer"></span></h1>
+        <p>Developer, Project Manager, Data Scientist, BI Developer, Photographer</p>
+
+        <!-- <ul class="list-unstyled list-social"> -->
+          <!-- <li><a href="#"><i class="bi bi-facebook"></i></a></li> -->
+          <!-- <li><a href="https://twitter.com/sojemann" target="_blank"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/babati02/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/babatunde-olasoji-pmi-acp-4794b230/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+        </ul> -->
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="{% static '/img/me1.jpg' %}" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+
+              <!-- <p class="p-heading">im a ux /ui designer based who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
+              <p class="separator">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.English person.</p> -->
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-briefcase"></i>
+                <span>UI/UX DESIGN</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-card-checklist"></i>
+                <span>BRAND IDENTITY</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bar-chart"></i>
+                <span>WEB DESIGN</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-binoculars"></i>
+                <span>MOBILE APPS</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div> --><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-brightness-high"></i>
+                <span>Analytics</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+           <!--  <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-brightness-high"></i>
+                <span>Analytics</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div> --><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-calendar4-week"></i>
+                <span>PHOTOGRAPHY</span>
+                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </div><!-- End Services Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  {% endblock content %}

@@ -1,0 +1,39 @@
+{% extends 'portfolio/base.html' %}
+{% load static%}
+
+{% block content%}
+
+<!-- ======= Journal Section ======= -->
+<div id="journal" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Photo Journal</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+          {% for post in posts %}
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="{% url 'postdetails' post.id %}"><img src="{{ post.image.url }}" class="img-responsive" alt="img"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="{% url 'postdetails' post.id %}">{{post.title}}</a></h4>
+                  <p class="separator">{{post.description}}</p>
+                </div>
+
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+  </div><!-- End Journal Section -->
+
+  {% endblock content %}
